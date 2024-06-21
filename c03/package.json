@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "test homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test",
+    "homework",
+    "node.js"
+  ],
+  "author": "Andrej",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
