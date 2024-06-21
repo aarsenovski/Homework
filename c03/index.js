@@ -29,6 +29,7 @@ printDogName = (name) => {
 callbackFn(printCarName, "Mercedes");
 callbackFn(printDogName, "Lara");
 
+// Promises
 let areYouMilennial = (yourAge) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -39,6 +40,7 @@ let areYouMilennial = (yourAge) => {
   });
 };
 
+// call the function with async/await and try/catch block
 let milenialOrNot = async (yourAge) => {
   try {
     const approval = await areYouMilennial(yourAge);
