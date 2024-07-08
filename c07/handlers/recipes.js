@@ -12,19 +12,21 @@ const createRecipe = async (req, res) => {
   res.status(201).send("Recipe created");
 };
 
-const updateRecipe = async (recipeIndex, recipeData) => {
+const updateRecipe = async (req, res) => {
   let recipes = await read();
+  const recipeIndex = req.params.rIndex;
   recipes = recipes.map((recipe, index) => {
-    if (index === recipeIndex) {
+    if (index === Number(recipeIndex)) {
       return {
         ...recipe,
-        ...recipeData,
+        ...req.body,
       };
     } else {
       return recipe;
     }
   });
   await write(recipes);
+  res.status(200).send("Recipe modified");
 };
 
 const deleteRecipe = async (req, res) => {
