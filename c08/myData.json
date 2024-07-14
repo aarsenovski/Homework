@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Milano Pizza",
+    "ingredients": [
+      "All-purpose flour",
+      "Butter, softened",
+      "Brown sugar",
+      "White sugar",
+      "Eggs",
+      "Vanilla extract",
+      "Baking soda",
+      "Salt",
+      "Chocolate chips"
+    ],
+    "minutes-for-prep": 60
+  },
+  {
+    "name": "Capricioza",
+    "ingredients": [
+      "All-purpose flour",
+      "Butter, softened",
+      "Brown sugar",
+      "White sugar",
+      "Eggs",
+      "Vanilla extract",
+      "Baking soda",
+      "Salt",
+      "Chocolate chips"
+    ],
+    "minutes-for-prep": 60
+  },
+  {
+    "name": "Bianca",
+    "ingredients": [
+      "All-purpose flour",
+      "Butter, softened",
+      "Brown sugar",
+      "White sugar",
+      "Eggs",
+      "Vanilla extract",
+      "Baking soda",
+      "Salt",
+      "Chocolate chips"
+    ],
+    "minutes-for-prep": 60
+  }
+]
