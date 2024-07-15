@@ -14,11 +14,12 @@ const getStudentForm = async (req, res) => {
 const postStudentForm = async (req, res) => {
   const { firstName, lastName, averageScore } = req.body;
 
-  let student = new Object();
-  student.firstName = firstName;
-  student.lastName = lastName;
-  student.averageScore = averageScore;
-
+  const student = {
+    firstName,
+    lastName,
+    averageScore,
+  };
+  // can do this since key and value are the same in this case
   try {
     console.log(student);
     const students = await read();
