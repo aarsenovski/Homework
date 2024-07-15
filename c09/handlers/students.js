@@ -31,6 +31,23 @@ const postStudentForm = async (req, res) => {
   }
 };
 
+const getAllStudents = async (req, res) => {
+  const students = await read();
+  console.log(students);
+  let output = await parseTemplate("students", {});
+};
+
+const deleteStudent = async (req, res) => {
+  const studentIndex = req.params.studentIndex;
+  let students = await read();
+  students = students.filter(
+    (student, index) => index !== Number(studentIndex)
+  );
+  console.log(students);
+  await write();
+  res.status(200).send("Student deleted");
+};
+
 const parseTemplate = async (template, data = null) => {
   return new Promise((resolve, reject) => {
     fs.readFile(
@@ -54,4 +71,6 @@ const parseTemplate = async (template, data = null) => {
 module.exports = {
   getStudentForm,
   postStudentForm,
+  getAllStudents,
+  deleteStudent,
 };

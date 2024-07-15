@@ -1,6 +1,4 @@
 [
-  { "ime": "Test", "prezime": "Test", "prosek": 2 },
-  { "firstName": "ddd", "lastName": "ddd", "averageScore": "22" },
-  { "firstName": "ddd", "lastName": "ddd", "averageScore": "22" },
-  { "firstName": "iiii", "lastName": "iii", "averageScore": "2222" }
+  { "firstName": "Andrej", "lastName": "Arsenovski", "averageScore": "22" },
+  { "firstName": "AAa", "lastName": "as", "averageScore": "22" }
 ]
