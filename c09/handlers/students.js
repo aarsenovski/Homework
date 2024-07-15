@@ -15,9 +15,9 @@ const postStudentForm = async (req, res) => {
   const { firstName, lastName, averageScore } = req.body;
 
   let student = new Object();
-  student.firstName === firstName;
-  student.lastName === lastName;
-  student.averageScore === averageScore;
+  student.firstName = firstName;
+  student.lastName = lastName;
+  student.averageScore = averageScore;
 
   try {
     console.log(student);
